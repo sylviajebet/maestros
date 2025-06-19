@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
-    "copy:static": "cp public/index.html dist/index.html && cp -r public/images dist/images",
+    "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "copy:static": "mkdir -p dist && cp public/index.html dist/index.html && cp -r public/images dist/images",
     "build": "npm run build:css && npm run copy:static"
   },
   "keywords": [],
@@ -14,11 +14,10 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^7.0.2",
     "cssnano": "^7.0.6",
-    "nodemon": "^3.1.10",
-    "tailwindcss": "^3.4.17"
+    "nodemon": "^3.1.10"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.17"
   }
 }
 
