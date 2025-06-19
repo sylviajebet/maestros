@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# production
+dist/
+build/
+
+# misc
+.DS_Store
+*.local
+.env
+.env.*
+.vscode/
+.idea/
+*.swp
+
+# optional: log files
+*.log
+
+# OS generated files
+Thumbs.db
+ehthumbs.db

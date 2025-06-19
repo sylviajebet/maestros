@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maestros Casineros</title>
+  <link rel="icon" type="image/x-icon" href="images/mc-png.png">
+
+  <!-- Stylesheets -->
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    .fade-edge {
+      -webkit-mask-image: radial-gradient(circle, #fff 40%, transparent 100%);
+      mask-image: radial-gradient(circle, #fff 40%, transparent 100%);
+    }
+    </style>
+
+  <!-- Alpine.js For view more or less -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+</head>
+<body>
+    <!-- Starting with the NavBar -->
+    <nav class="fixed left-0 top-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900">
+        <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+          <a href="#" class="flex items-center">
+            <img src="images/mc-png.png" class="mr-3 h-12" alt="Maestros Casineros' Logo" />
+            <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">Maestros Casineros</span>
+          </a>
+          <div class="flex md:order-2">
+            <button type="button" class="mr-0 rounded-lg bg-blue-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:mr-0">Join Our Community</button>
+          </div>
+          <div class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto" id="navbar-sticky">
+            <ul class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
+              <li>
+                <a href="/" class="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">About Us</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">Portfolio</a>
+              </li>
+              <li>
+                <a href="#" class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">Testimonials</a>
+              </li>
+              <li>
+                <a href="#" class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section Here -->
+      <section class="relative h-screen bg-gray-700/70 bg-[url('images/mc-group6.jpg')] bg-top bg-cover bg-no-repeat bg-blend-multiply mt-6 h-screen">
+        <div class="mx-auto max-w-screen-xl px-4 py-24 text-center lg:py-56 flex flex-col h-full relative z-10 justify-center translate-y-32">
+          <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">Maestros Casineros</h1>
+          <p class="mb-8 text-lg font-normal text-gray-300 sm:px-16 lg:px-48 lg:text-xl">Masters of Casino Dancing. Join us today and let's learn and enjoy the Rueda Circle together!</p>
+          <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSefqOLw6u7ih_APvVyWn9lc_varGHXeozLWQMQIceL_ppNQag/closedform" target="_blank" class="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+              Start Classes Today
+              <svg aria-hidden="true" class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#about" class="inline-flex items-center justify-center rounded-lg border border-white px-5 py-3 text-center text-base font-medium text-white hover:bg-gray-100 hover:text-gray-900 focus:ring-4 focus:ring-gray-400"> Learn more </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <div id="about" class="bg-[#111826] py-12">
+        <div class="mt-16 text-center">
+            <h2 class="text-2xl  md:text-4xl font-bold dark:text-white">Who are we?</h2>
+            <p class="text-gray-500 text-lg mt-4 mb-8 dark:text-gray-400 ">A glimpse into who we are, and what we do.</p>
+        </div>
+
+        <div class="space-y-10 md:mb-16 max-w-4xl mx-auto rounded-lg shadow-2xl overflow-hidden">
+          <!-- Card 1: Image Left -->
+          <div 
+            class="rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row min-h-[18rem] mb-8 mt-6" 
+            data-aos="fade-right"
+          >
+            <!-- Image on Left (fills paragraph height) -->
+            <img class="w-full md:w-1/2 h-64 md:h-auto object-cover rounded md:rounded-none md:rounded-l-lg fade-edge mt-5 ml-2"  
+                 src="images/mc-group4.jpg" alt="Maestros Casineros" />
+      
+            <!-- Text on Right -->
+            <div class="py-6 px-6 flex flex-col justify-center w-full md:w-1/2 md:pl-8 md:mt-0">
+              <h2 class="text-white font-semibold text-2xl tracking-tight">Background</h2>
+              <!-- <p class="py-2 text-gray-400 leading-6 font-semibold">Background</p> -->
+              <p class="text-gray-300 leading-6">
+                Maestros Casineros is a dynamic dance company specializing in the vibrant art form of Casino style (Cuban salsa) salsa dancing. Founded on 21st November 2016 at Kenyatta
+                University, our company is dedicated to promoting casino style salsa culture, rueda de casino, rueda loca, thrilling choreographies, and providing exceptional dance education. We foster
+                a vibrant community of salsa enthusiasts, with a focus on inclusivity, professionalism, and passion for dance. Maestros Casineros has become a prominent name in the East Africa
+                salsa scene.
+              </p>
+            </div>
+          </div>
+
+          <!-- Padding/Spacing Between Sections -->
+            <div class="border-b border mx-6"></div>
+
+          <!-- Card 2: Image Right -->
+            <div 
+            class="rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row min-h-[18rem] mt-6 mb-4" 
+            data-aos="fade-left"
+          >
+
+            <!-- Text on Left -->
+            <div class="py-6 px-6 flex flex-col justify-center w-full md:w-1/2 md:pl-8 mt-6 md:mt-0">
+              <h2 class="mt-2 text-white font-semibold text-2xl tracking-tight">Mission</h2>
+              <!-- <p class="py-2 text-gray-400 leading-6 font-semibold">Mission</p> -->
+              <p class="text-gray-300 leading-6">
+                At Maestros Casineros, our mission is to spread the joy of rueda de casino and casino style salsa dancing by providing high-quality instruction, inspiring performances, and vibrant
+                community events. We are committed to fostering a supportive and inclusive environment where dancers can learn, grow, and express themselves through the art of Cuban salsa. Through
+                our dedication to excellence and passion for the dance, we strive to enrich lives and promote cultural appreciation one salsa step at a time.
+              </p>
+            </div>
+
+            <!-- Image on Right (fills paragraph height) -->
+            <img class="w-full md:w-1/2 h-64 md:h-auto object-cover rounded md:rounded-none md:rounded-l-lg fade-edge"  
+                src="images/mc-group5.jpg" alt="Maestros Casineros" />
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Getting to the portfolio -->
+      <div id="portfolio" class="bg-[#374151] py-12">
+        <div class="mt-16 text-center">
+            <h2 class="text-2xl  md:text-4xl font-bold dark:text-white">What We Have Done</h2>
+            <p class="text-gray-500 text-lg mt-4 mb-8 dark:text-gray-400 ">Previous performances and workshops.</p>
+        </div>
+
+        <div x-data="{ showMore: false }" class="flex flex-wrap justify-center max-w-5xl mx-auto py-8 px-4 md:mb-16">
+
+        <!-- First Row  -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <!-- Card with Text Overlay and Hover Effect, Card == Image Size -->
+        <div class="relative w-full sm:w-80 h-48 sm:h-64 rounded-lg shadow-lg group overflow-hidden 
+            transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-lg" src="images/mc-group8.jpg" alt="" />
+        <!-- Overlay (shows on hover) -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center bg-[#111826]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+          <h2 class="text-gray-200 font-bold text-xl sm:text-2xl tracking-tight mb-2">Coast Afro-Latin 2024</h2>
+          <p class="text-gray-400 text-center text-sm">
+            Held in Diani, Kenya, over the Easter holiday in April, 2024, the Coast-Afro Latin 2024 festival was graced by a stellar performance from Maestros Casineros!
+          </p>
+        </div>
+        </div>
+
+        <!-- Card 2 -->
+        <!-- Card with Text Overlay and Hover Effect, Card == Image Size -->
+        <div class="relative w-full sm:w-80 h-48 sm:h-64 rounded-lg shadow-lg group overflow-hidden 
+            transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-lg" src="images/mc-group9.jpg" alt="" />
+        <!-- Overlay (shows on hover) -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center bg-[#111826]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+          <h2 class="text-gray-200 font-bold text-xl sm:text-2xl tracking-tight mb-2">Pre-Akomma 2024</h2>
+          <p class="text-gray-400 text-center text-sm">
+            Held in Nairobi, Kenya,  in June, 2024, the Pre-Akomma festival 2024 had a jaw-dropping performance by Maestros Casineros that left the crowd in absolute awe. 
+          </p>
+        </div>
+        </div>
+
+        <!-- Card 3 -->
+        <!-- Card with Text Overlay and Hover Effect, Card == Image Size -->
+        <div class="relative w-full sm:w-80 h-48 sm:h-64 rounded-lg shadow-lg group overflow-hidden 
+            transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-lg" src="images/mc-group10.jpg" alt="" />
+        <!-- Overlay (shows on hover) -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center bg-[#111826]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+          <h2 class="text-gray-200 font-bold text-xl sm:text-2xl tracking-tight mb-2">Dala Afro-Latin 2024</h2>
+          <p class="text-gray-400 text-center text-sm">
+            Held in Kisumu, Kenya, in October, 2024, the Dala Afro Latin 2024 festival had not only a workshop but also an electric performance by Maestros Casineros!
+          </p>
+        </div>
+        </div>
+
+        </div>
+
+      <!-- Extra Row: Revealed on Button Click -->
+      <div x-show="showMore" x-transition class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 mt-6">
+       
+        <!-- Card 4 -->
+        <div class="relative w-full sm:w-80 h-48 sm:h-64 rounded-lg shadow-lg group overflow-hidden 
+            transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-lg" src="images/mc-group8.jpg" alt="" />
+        <!-- Overlay (shows on hover) -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center bg-[#111826]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+          <h2 class="text-gray-200 font-bold text-xl sm:text-2xl tracking-tight mb-2">Coast Afro-Latin 2024</h2>
+          <p class="text-gray-400 text-center text-sm">
+            Held in Diani, Kenya, over the Easter holiday in April, 2024, the Coast-Afro Latin 2024 festival was graced by a stellar performance from Maestros Casineros!
+          </p>
+        </div>
+        </div>
+
+        <!-- Card 5 -->
+        <!-- Card with Text Overlay and Hover Effect, Card == Image Size -->
+        <div class="relative w-full sm:w-80 h-48 sm:h-64 rounded-lg shadow-lg group overflow-hidden 
+            transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-lg" src="images/mc-group8.jpg" alt="" />
+        <!-- Overlay (shows on hover) -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center bg-[#111826]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+          <h2 class="text-gray-200 font-bold text-xl sm:text-2xl tracking-tight mb-2">Coast Afro-Latin 2024</h2>
+          <p class="text-gray-400 text-center text-sm">
+            Held in Diani, Kenya, over the Easter holiday in April, 2024, the Coast-Afro Latin 2024 festival was graced by a stellar performance from Maestros Casineros!
+          </p>
+        </div>
+        </div>
+
+        <!-- Card 6 -->
+        <!-- Card with Text Overlay and Hover Effect, Card == Image Size -->
+        <div class="relative w-full sm:w-80 h-48 sm:h-64 rounded-lg shadow-lg group overflow-hidden 
+            transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <img class="absolute inset-0 w-full h-full object-cover rounded-lg" src="images/mc-group8.jpg" alt="" />
+        <!-- Overlay (shows on hover) -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center bg-[#111826]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+          <h2 class="text-gray-200 font-bold text-xl sm:text-2xl tracking-tight mb-2">Coast Afro-Latin 2024</h2>
+          <p class="text-gray-400 text-center text-sm">
+            Held in Diani, Kenya, over the Easter holiday in April, 2024, the Coast-Afro Latin 2024 festival was graced by a stellar performance from Maestros Casineros!
+          </p>
+        </div>
+        </div>
+
+      </div>
+
+      <!-- Button -->
+      <div class="flex justify-center mt-8">
+        <button
+          @click="showMore = !showMore"
+          class="px-6 py-2 rounded-lg bg-blue-700 text-white font-semibold shadow-md hover:bg-blue-800 transition-all"
+          x-text="showMore ? 'Show Less' : 'View More'">...
+        </button>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Contact Us -->
+    <section id="contact" class="bg-[#111826] py-16">
+      <div class="max-w-2xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Contact Us</h2>
+          <p class="text-gray-400 text-lg">We’d love to hear from you! Reach out for questions, bookings, or just to say hello.</p>
+        </div>
+        <form class="bg-[#374151] rounded-lg shadow-2xl p-8 space-y-6">
+          <div class="flex items-center space-x-3">
+            <!-- Envelope Icon (Heroicons) -->
+            <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 8l7.89 5.26c.7.47 1.62.47 2.32 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z" />
+            </svg>
+            <span class="text-gray-200">m.casineros@gmail.com</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <!-- Phone Icon (Heroicons) -->
+            <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2 7.82C2 4.34 4.68 2 8.09 2h.02c.7 0 1.36.29 1.85.81l2.13 2.17c.48.49.78 1.17.78 1.88 0 .38-.08.75-.22 1.09L10.4 8.73a15.72 15.72 0 0 0 5.23 5.23l1.77-2.25c.34-.14.71-.22 1.09-.22.71 0 1.39.3 1.88.78l2.17 2.13c.52.49.81 1.15.81 1.85 0 3.41-2.34 6.09-5.82 6.09A16.91 16.91 0 0 1 2 7.82z" />
+            </svg>
+            <span class="text-gray-200">+254 733 481 387</span>
+          </div>
+          <div>
+            <label class="block text-gray-300 mb-2" for="name">Your Name</label>
+            <input class="w-full rounded-lg px-4 py-2 bg-[#222c38] text-white focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" type="text" placeholder="Name" />
+          </div>
+          <div>
+            <label class="block text-gray-300 mb-2" for="email">Your Email</label>
+            <input class="w-full rounded-lg px-4 py-2 bg-[#222c38] text-white focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" type="email" placeholder="Email" />
+          </div>
+          <div>
+            <label class="block text-gray-300 mb-2" for="message">Message</label>
+            <textarea class="w-full rounded-lg px-4 py-2 bg-[#222c38] text-white focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" rows="4" placeholder="Type your message..."></textarea>
+          </div>
+          <button type="submit" class="w-full py-2 px-6 rounded-lg bg-blue-700 hover:bg-blue-800 text-white font-semibold shadow-lg transition-colors">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e1320] border-t border-[#23283a] py-10 mt-0">
+      <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <!-- Left: Brand and Made with Love -->
+        <div class="flex flex-col items-start">
+          <span class="text-gray-400 text-base mb-2">&copy; <span id="year"></span> Maestros Casineros. All rights reserved.</span>
+          <span class="text-pink-400 text-xs flex items-center gap-1">
+            <svg class="w-4 h-4 text-pink-400 inline" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+            </svg>
+            Made with Love
+          </span>
+        </div>
+        <!-- Center: Navigation Links -->
+        <nav class="flex flex-wrap gap-x-5 gap-y-1">
+          <a href="/" class="text-gray-500 text-xs hover:text-blue-400 transition">Home</a>
+          <a href="#about" class="text-gray-500 text-xs hover:text-blue-400 transition">About Us</a>
+          <a href="#portfolio" class="text-gray-500 text-xs hover:text-blue-400 transition">Portfolio</a>
+          <a href="#team" class="text-gray-500 text-xs hover:text-blue-400 transition">The Team</a>
+          <a href="#testimonials" class="text-gray-500 text-xs hover:text-blue-400 transition">Testimonials</a>
+          <a href="#contact" class="text-gray-500 text-xs hover:text-blue-400 transition">Contact Us</a>
+        </nav>
+        <!-- Right: Social Icons -->
+        <div class="flex space-x-6">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/maestros_casineros" target="_blank" class="text-gray-400 hover:text-pink-500 transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 2.75A6.25 6.25 0 1 1 5.75 12 6.26 6.26 0 0 1 12 6.25zm0 1.5a4.75 4.75 0 1 0 4.75 4.75A4.75 4.75 0 0 0 12 7.75zm6.375-2.125a1.125 1.125 0 1 1-1.125 1.125 1.13 1.13 0 0 1 1.125-1.125z"/>
+            </svg>
+          </a>
+          <!-- TikTok -->
+          <a href=" https://www.tiktok.com/@maestroscasineros" target="_blank" class="text-gray-400 hover:text-gray-100 transition">
+            <svg class="w-6 h-6" viewBox="0 0 256 256" fill="currentColor">
+              <path d="M224 80a48.05 48.05 0 0 1-48-48V24a8 8 0 0 0-16 0v128a32 32 0 1 1-32-32 8 8 0 0 0 0-16 48 48 0 1 0 48 48V96.42A64.11 64.11 0 0 0 224 112a8 8 0 0 0 0-16z"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/maestroscasineros" target="_blank" class="text-gray-400 hover:text-blue-600 transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.692V11.01h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0"></path>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com/@maestroscasineros?si=OyqAVrGXknhcaZZH" target="_blank" class="text-gray-400 hover:text-red-600 transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a2.993 2.993 0 0 0-2.111-2.112C19.44 3.5 12 3.5 12 3.5s-7.44 0-9.387.574A2.993 2.993 0 0 0 .502 6.186C0 8.133 0 12 0 12s0 3.867.502 5.814a2.993 2.993 0 0 0 2.111 2.112C4.56 20.5 12 20.5 12 20.5s7.44 0 9.387-.574a2.993 2.993 0 0 0 2.111-2.112C24 15.867 24 12 24 12s0-3.867-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Dynamic year for copyright -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+
+</body>
+</html>
