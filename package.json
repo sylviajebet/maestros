@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "build:css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
     "copy:static": "cp public/index.html dist/index.html && cp -r public/images dist/images",
     "build": "npm run build:css && npm run copy:static",
-    "watch:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "watch:css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
     "watch:static": "chokidar public/index.html public/images/* -c 'cp public/index.html dist/index.html && cp -r public/images dist/images'",
     "dev": "npm-run-all --parallel watch:css watch:static"
   },
