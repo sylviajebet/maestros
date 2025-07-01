@@ -31,14 +31,20 @@ It features:
 
 Scripts omitted:
 
+``` sh
 "watch:css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
 "watch:static": "npx chokidar public/index.html public/images/* -c 'cp public/index.html dist/index.html && cp -r public/images dist/images'",
 "dev": "npx npm-run-all --parallel watch:css watch:static"
 
+```
+
 devDependancies omitted:
 
+``` sh
 "chokidar-cli": "^3.0.0",
 "npm-run-all": "^4.1.5"
+
+```
 
 ---
 
