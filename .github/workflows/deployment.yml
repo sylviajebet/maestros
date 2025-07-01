@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Login to Registry
-        run: echo ${{ secrets.REGISTRY_PASSWORD }} | docker login registry.africastalking.dev -u ${{ secrets.REGISTRY_USERNAME }} --password-stdin
+        run: echo ${{ secrets.REGISTRY_PASSWORD }} | docker login ${{ secrets.REGISTRY_URL }} -u ${{ secrets.REGISTRY_USERNAME }} --password-stdin
       - name: Build and Push
         run: |
-          docker build -t registry.africastalking.dev/136ulk:latest .
-          docker push registry.africastalking.dev/136ulk:latest
+          docker build -t ${{ secrets.REGISTRY_URL }}/tailwind-project:latest .
+          docker push ${{ secrets.REGISTRY_URL }}/tailwind-project:latest
