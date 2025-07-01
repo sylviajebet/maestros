@@ -1,0 +1,17 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Login to Registry
+        run: echo ${{ secrets.REGISTRY_PASSWORD }} | docker login registry.africastalking.dev -u ${{ secrets.REGISTRY_USERNAME }} --password-stdin
+      - name: Build and Push
+        run: |
+          docker build -t registry.africastalking.dev/136ulk:latest .
+          docker push registry.africastalking.dev/136ulk:latest
