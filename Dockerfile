@@ -6,7 +6,8 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-
+# Install necessary utilities
+RUN apk add --no-cache shadow
 # Create a non-root user (e.g., 'myuser') and group
 RUN groupadd -r mygroup && useradd -r -g mygroup -m myuser
 # Set the user to 'myuser'
